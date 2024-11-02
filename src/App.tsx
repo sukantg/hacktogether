@@ -16,7 +16,7 @@ export default function App() {
         <HeroLogo {...{ type: 'react' }} />
         <HeroLogo {...{ type: 'vite' }} />
       </div>
-      <h1>ReactTogether + Vite + React</h1>
+      <h1>Hack Together with Eli and Zuki</h1>
       <div className='card'>
         <button onClick={() => set_count((count) => count + 1) }>Synq'd count is {count}</button> 
         {/* <button onClick={() => set_count((count) => count + 1)}>Synq'd count is {count}</button> */}
