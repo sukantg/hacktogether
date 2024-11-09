@@ -1,6 +1,6 @@
 // import './App.scss'
 import '@index.css'
-import '@styles/examplePage.scss'
+//import '@styles/examplePage.scss'
 
 import { useStateTogether } from 'react-together'
 
@@ -19,7 +19,7 @@ import EditForm from './components/EditForm'
 import TaskList from './components/TaskList'
 
 function App() {
-  const [tasks, setTasks] = useLocalStorage('react-todo.tasks', []);
+  const [tasks, setTasks] = useStateTogether('react-todo.tasks', []);
   const [previousFocusEl, setPreviousFocusEl] = useState(null);
   const [editedTask, setEditedTask] = useState(null);
   const [isEditing, setIsEditing] = useState(false);
@@ -63,7 +63,7 @@ function App() {
 
   return (
     <>
-    <div>
+    {/* <div>
        <div className='flex'>
             <div>
               <Card/>
@@ -72,12 +72,15 @@ function App() {
               <Card/>
             </div>
       </div>
-    </div>
-    <div className="mt-5 bg-slate-500">
+    </div> */}
+    <div className=" mt-5 bg-slate-500">
       <header>
-        <h1>sk List</h1>
+        <h1 className='text-3xl'> Contract</h1>
       </header>
-      {
+</div>
+      <div className='flex'>
+        <div className='mt-5 px-4'>
+        {
         isEditing && (
           <EditForm
             editedTask={editedTask}
@@ -95,6 +98,31 @@ function App() {
           enterEditMode={enterEditMode}
         />
       )}
+        </div>
+
+        <div className='mt-5 px-4'>
+        {
+        isEditing && (
+          <EditForm
+            editedTask={editedTask}
+            updateTask={updateTask}
+            closeEditMode={closeEditMode}
+          />
+        )
+      }
+      <CustomForm addTask={addTask}/>
+      {tasks && (
+        <TaskList
+          tasks={tasks}
+          deleteTask={deleteTask}
+          toggleTask={toggleTask}
+          enterEditMode={enterEditMode}
+        />
+      )}
+
+        </div>
+       
+      
     </div>
     </>
   )

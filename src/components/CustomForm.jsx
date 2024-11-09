@@ -22,7 +22,7 @@ const CustomForm = ({ addTask }) => {
       onSubmit={handleFormSubmit}
       >
       <div className="wrapper">
-        <input
+        <textarea
           type="text"
           id="task"
           className="input"
@@ -36,7 +36,7 @@ const CustomForm = ({ addTask }) => {
         <label
           htmlFor="task"
           className="label"
-        >Enter Task</label>
+        >Agreement point</label>
       </div>
       <button
         className="btn"

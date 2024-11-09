@@ -19,7 +19,7 @@ const TaskItem = ({ task, deleteTask, toggleTask, enterEditMode }) => {
   return (
     <li className={styles.task}>
       <div className={styles["task-group"]}>
-        <input
+        <textarea
           type="checkbox"
           className={styles.checkbox}
           checked={isChecked}
