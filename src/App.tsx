@@ -1,4 +1,5 @@
-import './App.scss'
+// import './App.scss'
+import '@index.css'
 import '@styles/examplePage.scss'
 
 import { useStateTogether } from 'react-together'
