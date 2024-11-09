@@ -8,6 +8,7 @@ import { version } from '@package'
 import { HeroLogo } from '@components'
 import Card from '@components/Card'
 import { useState } from 'react'
+import Navbar from '../src/components/Navbar.jsx'
 
 
 // custom hooks
@@ -74,8 +75,9 @@ function App() {
       </div>
     </div> */}
     <div className=" mt-5 bg-slate-500">
+      
       <header>
-        <h1 className='text-3xl'> Contract</h1>
+        <h1 className='text-3xl'> <Navbar></Navbar></h1>
       </header>
 </div>
       <div className='flex'>
