@@ -1,14 +1,18 @@
 ## Hackathon Link - https://taikai.network/multisynq/hackathons/hacktogether
 
-##  HackTogether Project - Integrity Ink
-### Collaborative Business Contract  generation
+## HackTogether Project - Integrity Ink
 
-###  Welcome to the HackTogether hackathon with Eli, Mohnish and Sukant! 
-###  Introducing a real-time contract collaboration platform that brings the speed of modern software development to legal teams. 
-###  Instead of endless email chains with document attachments, stakeholders can see live updates, edit contract language, make suggestions, and resolve issues together. 
-###  Each team member's cursor is visible on screen, comments appear in real-time, and redlines update automatically – transforming contract creation from a linear process into a dynamic
-###  conversation.
+### Collaborative Business Contract generation
 
+### Welcome to the HackTogether hackathon with Eli, Mohnish and Sukant!
+
+### Introducing a real-time contract collaboration platform that brings the speed of modern software development to legal teams.
+
+### Instead of endless email chains with document attachments, stakeholders can see live updates, edit contract language, make suggestions, and resolve issues together.
+
+### Each team member's cursor is visible on screen, comments appear in real-time, and redlines update automatically – transforming contract creation from a linear process into a dynamic
+
+### conversation.
 
 ## Getting Started
 
@@ -19,6 +23,7 @@ Follow these steps to set up your project:
 Stuck here? Check out this GitHub guide: https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo
 
 ### 2. Install dependencies:
+
 In your terminal, make sure you have `npm` installed.
 Then, go to your repo directory and run:
 
@@ -27,17 +32,20 @@ npm i
 ```
 
 ### 3. Get your Multisynq API Key:
+
 - Go to [https://multisynq.io/account](https://multisynq.io/account)
 - Register for a free account and obtain your API Key
 
 ### 4. Configure your Multisynq credentials:
 
 - Create a `.env` file (you can copy from `example.env`)
+
 ```bash
 cp .env.example .env
 ```
 
 - Replace the placeholders with your actual credentials:
+
 ```
 VITE_APP_ID=dev.reacttogether.your-app-name
 VITE_API_KEY= # <-- Insert your Multisynq API key
@@ -48,6 +56,7 @@ VITE_SESSION_NAME="Any password you want!"
 ### 5. Start the development server:
 
 In your terminal, run
+
 ```bash
 npm run dev
 ```
@@ -60,16 +69,16 @@ The following steps are adapted from their official guide, which can be found at
 
 To deploy your site to Cloudflare Pages:
 
- * Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account.
- * In Account Home, select *Workers & Pages* > *Create application* > *Pages* > *Connect to Git*.
- * Select your GitHub repository.
- * In the Set up builds and deployments, set `npm run build` as the *Build command*, and `dist` as the *Build output directory*.
- * After completing configuration, select *Save and Deploy*.
+- Log in to the [Cloudflare dashboard](https://dash.cloudflare.com/) and select your account.
+- In Account Home, select _Workers & Pages_ > _Create application_ > _Pages_ > _Connect to Git_.
+- Select your GitHub repository.
+- In the Set up builds and deployments, set `npm run build` as the _Build command_, and `dist` as the _Build output directory_.
+- After completing configuration, select _Save and Deploy_.
 
 You will see your first deploy pipeline in progress.
 Pages installs all dependencies and builds the project as specified.
 After you have deployed your project, it will be available at the `<YOUR_PROJECT_NAME>.pages.dev` subdomain.
-Find your project’s subdomain in *Workers & Pages* > select your Pages project > *Deployments*.
+Find your project’s subdomain in _Workers & Pages_ > select your Pages project > _Deployments_.
 
 Cloudflare Pages will automatically rebuild your project and deploy it on every new pushed commit.
 
@@ -78,8 +87,10 @@ With these, you can preview changes to your project with a real URL before deplo
 
 ### Have fun and HackTogether!
 
-  - Check out the [ReactTogether documentation](https://reacttogether.com/) to learn about its features and uses.
+- Check out the [ReactTogether documentation](https://reacttogether.com/) to learn about its features and uses.
 
 ---
+
 ### Need Help?
+
 If you have any questions or run into issues, don't hesitate to reach out to the hackathon organizers or check the official documentation for the tools used in this template.
