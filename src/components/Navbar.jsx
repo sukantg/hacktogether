@@ -12,8 +12,9 @@ function Navbar() {
 
   return (
     <nav className="bg-gray-800 text-white">
-      <div className="w-1/3 hidden md:block">
-    <img src={Image} alt="Large Image" className="w-2/3 h-auto object-cover ml-8" />
+      <div className='flex'>
+      <div className="mx-auto hidden md:block">
+    <img src={Image} alt="Large Image" className="w-1/3 h-auto object-cover ml-8" />
   </div>
       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
       <div className="w-1/2 hidden md:block">
@@ -37,6 +38,8 @@ function Navbar() {
           <a href="/contact" className="p-2 hover:bg-gray-700 hover:rounded">Contact</a>
         </div>
       </div>
+      </div>
+    
     </nav>
   );
 }

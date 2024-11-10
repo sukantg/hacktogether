@@ -1,7 +1,7 @@
 // import './App.scss'
 import '@index.css'
 //import '@styles/examplePage.scss'
-
+import Image from './assets/images/integrity.svg';
 import { useStateTogether } from 'react-together'
 
 import { version } from '@package'
@@ -77,11 +77,21 @@ function App() {
     <div className=" mt-5 bg-slate-500">
       
       <header>
-        <h1 className='text-3xl'> <Navbar></Navbar></h1>
+        <h1 className='text-3xl'> </h1>
       </header>
 </div>
+<img src={Image} alt="Large Image"  width={250} height={250} className="mx-auto  items-center h-auto object-cover" />
+{/* <Navbar/> */}
       <div className='flex'>
         <div className='mt-5 px-4'>
+        {tasks && (
+        <TaskList
+          tasks={tasks}
+          deleteTask={deleteTask}
+          toggleTask={toggleTask}
+          enterEditMode={enterEditMode}
+        />
+      )}
         {
         isEditing && (
           <EditForm
@@ -92,17 +102,18 @@ function App() {
         )
       }
       <CustomForm addTask={addTask}/>
-      {tasks && (
-        <TaskList
-          tasks={tasks}
-          deleteTask={deleteTask}
-          toggleTask={toggleTask}
-          enterEditMode={enterEditMode}
-        />
-      )}
+      
         </div>
 
         <div className='mt-5 px-4'>
+        {tasks && (
+        <TaskList
+          tasks={tasks}
+          deleteTask={deleteTask}
+          toggleTask={toggleTask}
+          enterEditMode={enterEditMode}
+        />
+      )}
         {
         isEditing && (
           <EditForm
@@ -112,15 +123,9 @@ function App() {
           />
         )
       }
+      
       <CustomForm addTask={addTask}/>
-      {tasks && (
-        <TaskList
-          tasks={tasks}
-          deleteTask={deleteTask}
-          toggleTask={toggleTask}
-          enterEditMode={enterEditMode}
-        />
-      )}
+      
 
         </div>
        
