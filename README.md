@@ -1,13 +1,13 @@
 ## Hackathon Link - https://taikai.network/multisynq/hackathons/hacktogether
 
 ##  HackTogether Project - Integrity Ink
-Collaborative Business Contract  generation
+### Collaborative Business Contract  generation
 
-##  Welcome to the HackTogether hackathon with Eli, Mohnish and Sukant! 
-##  Introducing a real-time contract collaboration platform that brings the speed of modern software development to legal teams. 
-##  Instead of endless email chains with document attachments, stakeholders can see live updates, edit contract language, make suggestions, and resolve issues together. 
-##  Each team member's cursor is visible on screen, comments appear in real-time, and redlines update automatically – transforming contract creation from a linear process into a dynamic
-##  conversation.
+###  Welcome to the HackTogether hackathon with Eli, Mohnish and Sukant! 
+###  Introducing a real-time contract collaboration platform that brings the speed of modern software development to legal teams. 
+###  Instead of endless email chains with document attachments, stakeholders can see live updates, edit contract language, make suggestions, and resolve issues together. 
+###  Each team member's cursor is visible on screen, comments appear in real-time, and redlines update automatically – transforming contract creation from a linear process into a dynamic
+###  conversation.
 
 
 ## Getting Started
